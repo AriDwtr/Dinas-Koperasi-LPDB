@@ -1,0 +1,42 @@
+/* 
+// 05.Loader
+*/
+
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top left, #f59d9d 0%, #5a4fdc 100%);
+    z-index: 9999999;
+  }
+  
+  #preloader #status {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+
+
+  .spinner {
+    width: 60px;
+    height: 60px;
+    background-color: $white;
+    border-radius: 6px;
+    box-shadow: $box-shadow;
+    margin: 100px auto;
+    animation: sk-rotateplane 1.2s infinite ease-in-out;
+  }
+  
+  @keyframes sk-rotateplane {
+    0% { 
+      transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+    } 50% { 
+      transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+    } 100% { 
+      transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+    }
+  }

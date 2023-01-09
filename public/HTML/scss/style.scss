@@ -1,0 +1,37 @@
+/* Template Name: Lezir - Responsive Bootstrap 4 Landing Page Template
+   Author: Themesbrand
+   Version: 2.0.0
+   Created: Jan 2019
+   File Description: Main Css file of the template
+*/
+
+/**********************
+01.General
+02.Menu
+03.Components
+04.Helper
+05.Loader
+06.Hero
+07 Why Choose Us
+08.Features
+09.Pricing
+10.Contact
+11.Footer
+12.Modal
+***********************/
+
+
+@import "variables";
+@import "general";
+@import "menu";
+@import "components";
+@import "helper";
+@import "loader";
+@import "hero";
+@import "why-choose-us";
+@import "features";
+@import "pricing";
+@import "contact";
+@import "footer";
+@import "modal";
+

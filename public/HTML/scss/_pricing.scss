@@ -1,0 +1,40 @@
+/* 
+// 9. Pricing
+*/
+
+.pricing-box {
+    background: $white;
+    box-shadow: $box-shadow;
+    margin-bottom: 30px;
+    position: relative;
+    overflow: hidden;
+    .pricing-icon-bg {
+        background: rgba($primary, 0.12);
+        color: $primary;
+        display: block;
+        height: 80px;
+        width: 80px;
+        line-height: 100px;
+        margin: 0 auto;
+        border-radius: 20% 20% 4% 20% / 20% 20% 4% 20%;
+        box-shadow: 0 0 0 7px rgba($primary, 0.03);
+        transition: all 0.5s;
+    }
+    .pricing-item {
+        li {
+            padding: 10px 0;
+        }
+    }
+    .pr-btn {
+        position: relative;
+        z-index: 1;
+    }
+    &:hover, &.active {
+        .pricing-icon-bg {
+            background-color: $primary;
+            box-shadow: 0 0 0 7px rgba($primary, 0.06);
+            color: $white;
+            border-radius: 4% 20% 20% 20% / 4% 20% 20% 20%;
+        }
+    }
+}

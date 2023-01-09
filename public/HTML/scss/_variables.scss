@@ -1,0 +1,61 @@
+/*
+// variables.scss
+*/
+
+
+@import url('https://fonts.googleapis.com/css2?family=Muli:ital,wght@0,300;0,600;0,700;0,800;1,400;1,500&family=Quicksand:wght@400;500;600;700&display=swap');
+
+// Color variables
+$white:               #fff;
+$gray-100:            #f8f9fa;
+$gray-200:            #f4f5fb;
+$gray-300:            #edeff1;
+$gray-400:            #ced4da;
+$gray-500:            #adb5bd;
+$gray-600:            #7e8599;
+$gray-700:            #495057;
+$gray-800:            #242731;
+$gray-900:            #212529;
+$black:               #000;
+
+
+$primary:             green;
+$secondary:           #6c757d;
+$success:             #14cf9f;
+$info:                #4fccdc;
+$warning:             #ffbb13;
+$danger:              #f43958;
+$dark:                #3b3950;
+$muted:               #9e9cb9;
+$light:               #fbfafd ;
+$body-bg:             #ffffff;
+
+
+
+$theme-colors: (
+    "primary": $primary,
+    "secondary": $secondary,
+    "success": $success,
+    "info": $info,
+    "warning": $warning,
+    "danger": $danger,
+    "dark": $dark,
+    "muted": $muted,
+    "light": $light,
+    "body-bg": $body-bg,
+    "black": $black,
+    "white": $white
+);
+
+$display-light: block;
+
+$display-dark: none;
+
+$box-shadow: 0 3px 12px rgba(6, 11, 47, 0.06);
+
+$text-shadow: 3px 3px 6px rgba(14, 10, 65, 0.25);
+
+
+// Font
+$font-primary:            'Quicksand', sans-serif;
+$font-secondary:          'Muli', sans-serif;

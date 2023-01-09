@@ -1,0 +1,47 @@
+/* 
+// 10. Contact us
+*/
+
+.form-control:focus {
+  box-shadow: none;
+  background-color: $light;
+  border-color: $gray-400;
+}
+
+textarea.form-control {
+  height: auto !important;
+}
+
+.custom-form {
+  .form-group {
+    margin-bottom: 1rem;
+  }
+  label {
+    margin-bottom: 10px;
+  }
+  .alert-warning {
+    padding: 10px;
+  }
+}
+
+.form-control {
+  padding: 8px 10px;
+  font-size: 14px;
+  height: 40px;
+  background-color: rgba($dark, 0.01);
+  border: 1px solid rgba($muted, 0.3);
+  &::placeholder {
+    color: lighten($muted, 6%);
+    font-size: 14px;
+  }
+}
+
+.contact-loader {
+  display: none;
+}
+
+#success_page {
+  background-color: rgba($success, 0.25);
+  padding: 10px 20px;
+  border-radius: 4px;
+}

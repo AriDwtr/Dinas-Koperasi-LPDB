@@ -1,0 +1,275 @@
+/* 
+// 06.Hero
+*/
+
+@mixin overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+
+// Hero 1
+.hero-1-bg {
+    padding: 130px 0 110px;
+    background: rgba($primary, 0.025);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    .hero-1-title {
+        font-size: 52px;
+    }
+    .subscribe-form {
+        form {
+            position: relative;
+            max-width: 600px;
+            margin: 0px auto;
+        }
+        input {
+            padding: 17px 20px;
+            width: 100%;
+            border: none;
+            outline: none !important;
+            padding-right: 160px;
+            padding-left: 20px;
+            background-color: darken($gray-200, 1%);
+            border-radius: 4px;
+        }
+        button {
+            position: absolute;
+            top: 5px;
+            right: 5px;
+        }
+        ::placeholder {
+            font-size: 16px;
+            color: lighten($secondary, 10%);
+        }
+    }
+}
+
+
+
+// Hero 2
+.hero-2-bg {
+    padding: 260px 0 280px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    .hero-2-title {
+        font-size: 48px;
+    }
+}
+
+// Hero 3
+.hero-3-bg {
+    padding: 80px 0 0px;
+    background-color: $gray-100;
+    border-bottom: 1px solid darken($gray-100, 1%);
+    .hero-3-title {
+        font-size: 44px;
+    }
+    .play-icon-circle {
+        border: 2px solid $dark;
+        height: 46px;
+        font-size: 24px;
+        width: 46px;
+        color: $dark;
+        line-height: 43px;
+        text-align: center;
+        border-radius: 50%;
+        display: inline-block;
+        transition: all 0.5s;
+        &:hover {
+            background-color: $primary;
+            border-color: $primary;
+            box-shadow: 0 0px 0px 6px rgba($primary, 0.12);
+            color: $white !important;
+        }
+    }
+}
+
+
+.home-modal{
+    border: 0;
+    background-color: transparent;
+    .btn-close{
+      width: 24px;
+      height: 24px;
+      background-color: rgba($white, 0.5);
+      border-radius: 6px;
+      position: relative;
+      top: 60px;
+      z-index: 3;
+      right: 3px;
+      &:hover,
+      &:focus{
+        opacity: 0.5;
+      }
+    }
+    video{
+      &:focus{
+        outline: none;
+      }
+    }
+  }
+  
+  .video-box{
+   width: 100%;
+  }
+  
+
+// Hero 4
+.hero-4-bg {
+    padding: 210px 0 170px;
+    .hero-4-title {
+        font-size: 48px;
+        .text-bottom-border {
+            position: relative;
+            z-index: 2;
+            padding: 0 10px;
+            &:after {
+                content: "";
+                background: rgba($primary, 0.2);
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 10%;
+                width: 100%;
+                z-index: -1;
+                transition: all 0.3s;
+            }
+            &:hover {
+                &:after {
+                    background: rgba($primary, 0.1);
+                    height: 100%;
+                }
+            }
+        }
+    }
+    .hero-4-registration-form {
+        box-shadow: 0 4px 16px rgba($black, .065);
+        padding: 40px;
+        .registration-form {
+            label{
+                margin-bottom: 8px;
+            }
+            .form-control {
+                border-color: darken($light, 6%);
+                &:focus {
+                    box-shadow: none;
+                    border-color: lighten($primary, 16%);
+                }
+            }
+        }
+        .form-border {
+            border: 1px solid darken($light, 5%);
+        }
+    }
+}
+
+// Hero 5
+.hero-5-bg {
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    .hero-5-title {
+        font-size: 48px;
+    }
+    .bg-overlay {
+        opacity: 0.60;
+    }
+    .bg-hero-overlay {
+        background-image: url("../images/hero-5-overlay.png");
+        background-position: center center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        width: 100%;
+        opacity: 1;
+        @include overlay
+    }
+}
+
+// Hero 6
+.hero-6-bg {
+    padding: 250px 0 230px 0px;
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    .hero-6-title {
+        font-size: 44px;
+    }
+    .Subcribe-form {
+        form {
+            position: relative;
+            margin: 0px auto;
+        }
+        input {
+            padding: 12px 20px;
+            width: 60%;
+            font-size: 17px;
+            color: #4c5667 !important;
+            border: none;
+            outline: none !important;
+            background-color: $white;
+            border-radius: 30px;
+            position: relative;
+            top: 3px;
+            &::placeholder {
+                font-size: 15px;
+                color: lighten($secondary, 10%);
+            }
+        }
+    }
+}
+
+// ***** Responsive *****// 
+@media (max-width: 576px) {
+    .hero-1-title, .hero-2-title, .hero-4-title, .hero-5-title {
+        font-size: 36px !important;
+    }
+    .hero-6-bg {
+        padding: 150px 0 110px 0px;
+        .hero-6-title {
+            font-size: 32px !important;
+        }
+        .Subcribe-form {
+            input {
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .hero-1-bg {
+        .w-75 {
+            width: 100% !important;
+        }
+    }
+    .hero-2-bg {
+        padding: 130px 0 70px;
+    }
+    .hero-3-bg {
+        padding: 130px 0 0px;
+    }
+    .hero-4-bg {
+        padding: 140px 0 110px;
+    }
+}
+
+@media (max-width: 1024px) {
+    .hero-5-bg {
+        height: auto !important;
+        padding: 170px 0 130px;
+        .bg-hero-overlay {
+            background-image: none;
+            background: $gray-100;
+        }
+    }
+}

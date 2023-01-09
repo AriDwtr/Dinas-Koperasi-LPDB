@@ -1,0 +1,210 @@
+/* 
+// 04.Helper
+*/
+
+@each $color, $value in $theme-colors {
+    .text-#{$color} {
+        color: #{$value} !important;
+    }
+    .bg-#{$color} {
+        background-color: #{$value} !important;
+    }
+    .bg-soft-#{$color} {
+        background-color: rgba($value, 0.12);
+    }
+}
+
+.text-shadow {
+  text-shadow: $text-shadow;
+}
+
+.text-white-70 {
+    color: rgba($white, 0.70);
+}
+
+.font-weight-medium {
+    font-weight: 500;
+}
+.font-weight-semibold {
+    font-weight: 600;
+}
+.section {
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+.bg-overlay {
+    background-color: $black;
+    opacity: 0.85;
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.bg-gradient-primary {
+    background: linear-gradient(to top, $info 0%, $primary 100%);
+}
+
+.line-height-1_6 {
+    line-height: 1.6;
+}
+.line-height-1_4 {
+    line-height: 1.4;
+}
+
+.font-size-12 {
+    font-size: 12px;
+}
+
+.font-size-13 {
+    font-size: 13px;
+}
+
+.font-size-14 {
+    font-size: 14px;
+}
+
+.font-size-15 {
+    font-size: 15px;
+}
+
+.font-size-16 {
+    font-size: 16px;
+}
+
+.font-size-17 {
+    font-size: 17px;
+}
+
+.font-size-18 {
+    font-size: 18px;
+}
+
+.font-size-19 {
+    font-size: 19px;
+}
+
+.font-size-20 {
+    font-size: 20px;
+}
+.font-size-24 {
+  font-size: 24px;
+}
+
+.title {
+  text-shadow: 1px 2px 3px rgba($dark, 0.2);
+}
+
+.hero-bottom-img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.right-icon {
+    line-height: 0;
+    font-size: 19px;
+}
+
+// icon
+
+//  icon
+.icon-size-15 {
+    height: 15px;
+    width: 15px;
+    svg {
+      height: 15px !important;
+      width: 15px !important;
+    }
+  }
+  
+  .icon-sm {
+    height: 18px;
+    width: 18px;
+    svg {
+      height: 18px !important;
+      width: 18px !important;
+    }
+  }
+  
+  .icon-xs {
+    height: 20px;
+    width: 20px;
+    svg {
+      height: 20px !important;
+      width: 20px !important;
+    }
+  }
+  
+  .icon-md {
+    height: 25px;
+    width: 25px;
+    svg{
+      height: 25px !important;
+      width: 25px !important;
+    }
+  }
+  
+  .icon-lg {
+    height: 30px;
+    width: 30px;
+    svg {
+      height: 30px !important;
+      width: 30px !important;
+    }
+  }
+  
+  .icon-xl {
+    height: 35px;
+    width: 35px;
+    svg {
+      height: 35px !important;
+      width: 35px !important;
+    }
+  }
+  
+  .icon-xxl {
+    height: 45px;
+    width: 45px;
+    svg {
+      height: 45px !important;
+      width: 45px !important;
+    }
+  }
+  
+  .icon-xxxl {
+    height: 60px;
+    width: 60px;
+    svg {
+      height: 60px !important;
+      width: 60px !important;
+    }
+  }
+
+
+  @each $color, $value in $theme-colors {
+    .uim-icon-#{$color} {
+        .uim-svg{
+            fill: $value !important;
+        }
+    }
+    .icon-fill-#{$color} {
+        fill: rgba($value, 0.15);
+    }
+}
+
+.sw_1-5 {
+stroke-width: 1.5px;
+}
+
+.sw_3 {
+stroke-width: 3px;
+}
+
+.icon {
+position: relative;
+top: -2px;
+}

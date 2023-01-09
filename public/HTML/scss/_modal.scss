@@ -1,0 +1,60 @@
+/* 
+// 12. modal
+*/
+
+.modal {
+    .modal-dialog {
+        .modal-content {
+            .modal-body {
+                padding: 32px;
+                .social-login {
+                    position: relative;
+                    background: $white;
+                    padding: 0 12px;
+                    display: inline-block;
+                }
+                .login-border {
+                    border: 1px solid $gray-300;
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    top: 16px;
+                }
+                .login-social-icon {
+                    height: 45px;
+                    width: 45px;
+                    display: block;
+                    color: $white;
+                    line-height: 45px;
+                    border-radius: 50%;
+                    transition: all 0.5s;
+                }
+            }
+        }
+    }
+    .form-group{
+        margin-bottom: 1rem;
+      
+            label {
+                margin-bottom: 10px;
+            }
+       
+    }
+}
+
+.login-page{
+    max-width: 420px;
+}
+
+@each $color, $value in $theme-colors {
+    .login-form {
+        .login-social-icon {
+            &.icon-#{$color} {
+                background-color: #{$value};
+                &:hover {
+                    box-shadow: 0 0 0 5px rgba($value, 0.16);
+                }
+            }
+        }
+    }
+}
